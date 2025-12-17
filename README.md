@@ -377,3 +377,5 @@ reboot
 Now that its installed launch hyprland(hyprland not caelestia) using sddm and type caelestia shell -d to start caelestia. Or is you want it to launch automatically add exec-once = caelestia shell -d to your hyprland config.
 
 
+
+
