@@ -1,5 +1,17 @@
 # caelestia-installer-temporary-fix-2025-12-17-uselessl3v1
-This is just my personal quickfix to the caelestia install script being broken at the moment
+
+
+# This is just my personal quickfix to the caelestia install script being broken at the moment. 
+
+# If youre here look at the raw and not the preview, the preview is scuffed and i cant be bothered to fix it
+
+# All of this is way easier if done from a temporary dektop so my advice is to temporarily(if you dont have anything) to install kde-plasma and then delete that when youve got caelestia.
+
+
+
+
+
+
 
 
 iwctl
@@ -33,9 +45,11 @@ nano PKGBUILD
 In the cmake flags add: -DCRASH_REPORTER=OFF
 Like this:
 
+
 cmake -B build \
       -DCRASH_REPORTER=OFF \
       ...
+
 
 Save and exit with ctrl+o, enter, ctrl+x
 
@@ -43,7 +57,10 @@ makepkg -si --noconfirm
 
 nano ~/.local/share/caelestia/install.fish
 
-While in nano delete everything and paste this:
+While in nano delete everything and paste the following(it ends with log 'Done!'):
+
+
+
 
 #!/usr/bin/env fish
 
@@ -353,6 +370,8 @@ end
 caelestia shell -d > /dev/null
 
 log 'Done!'
+
+
 
 
 
